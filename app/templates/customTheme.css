@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Muli";
+  src: url("fonts/Muli.ttf");
+}
+
+body {
+	font-family: 'Muli', Sans-serif;
+}
+
+.bg-emerald {
+  background-color: #2ECC71;
+  color: #fff;
+}
+
+.bg-peter-river {
+  background-color: #3498DB;
+  color: #fff;
+}
+
+.bg-orange {
+  background-color: #F39C12;
+  color: #fff;
+}
+
+.bg-asphalt {
+  background-color: #34495E;
+  color: #fff;
+}
+
+.bg-sun-flower {
+  background-color: #F1C40F;
+  color: #fff;
+}
+
+.bg-turquoise {
+  background-color: #1ABC9C;
+  color: #fff;
+}
+
+.bg-pomergranate {
+  background-color: #C0392B;
+  color: #fff;
+}
+
+.bg-lavendar {
+  background-color: #9B59B6;
+  color: #fff;
+}
+
+.socialMedia {
+	content: '<%= twitter %>';
+}
