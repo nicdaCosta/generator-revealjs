@@ -8,7 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title><%= _.capitalize(talkTitle) %></title>
   <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+  <% if ( customTheme ) { %>
   <link rel="stylesheet" href="css/customTheme.css">
+  <% } %>
 </head>
 <body>
   <!--[if lt IE 7]>
@@ -16,13 +18,19 @@
   <![endif]-->
   <div class="reveal">
     <div class="slides">
-      <section data-markdown>
-        <script type="text/template" data-state="bg-lavendar">
+
+      <section data-markdown data-state="bg-lavendar">
+        <script type="text/template">
             ## initial slide
 
-            A paragraph with some text and a [link](http://google.com).
+            A slide using markdown with a [link](http://google.com).
         </script>
       </section>
+
+      <section data-state="bg-lavendar">
+        <h1>A regular slide</h1>
+      </section>
+
     <div>
   </div>
 

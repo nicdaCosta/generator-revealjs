@@ -22,18 +22,24 @@ RevealjsGenerator.prototype.askFor = function askFor() {
   // have Yeoman greet the user.
   console.log(this.yeoman);
 
-  var prompts = [{
-    name: 'talkTitle',
-    message: 'What is the title of your talk?',
-    default: true
-  },{
-    name: 'twitter',
-    message: 'What is your twitter handle?',
-    default: true
-  }];
+  var prompts = [ {
+      name: 'talkTitle',
+      message: 'What is the title of your talk?',
+      default: 'My Awesome Talk'
+    },{
+      type: 'confirm',
+      name: 'customTheme',
+      message: 'Would you like to add a custom theme option?',
+      default: false
+    },{
+      name: 'twitter',
+      message: 'What is your twitter handle?',
+      default: ''
+    }];
 
   this.prompt(prompts, function (props) {
     this.talkTitle = props.talkTitle;
+    this.customTheme = props.customTheme;
     this.twitter = props.twitter;
 
     cb();
@@ -46,7 +52,9 @@ RevealjsGenerator.prototype.app = function app() {
   this.mkdir('slides/css/fonts');
   
   this.copy('Muli.ttf', 'slides/css/fonts/Muli.ttf');
-  this.template('customTheme.css', 'slides/css/customTheme.css');
+
+  // only copy over customTheme if selected by user
+  this.customTheme && this.template('customTheme.css', 'slides/css/customTheme.css');
   
   this.template('_index.md', 'index.md');
 

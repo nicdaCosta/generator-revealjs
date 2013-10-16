@@ -1,7 +1,7 @@
 {
   "name": "generator-revealjs",
-  "version": "0.0.0",
-  "description": "A generator for Yeoman",
+  "version": "0.0.1",
+  "description": "A reveal.js generator for Yeoman",
   "keywords": [
     "yeoman-generator"
   ],
@@ -9,7 +9,7 @@
   "bugs": "https://github.com/nicdaCosta/generator-revealjs/issues",
   "author": {
     "name": "Nic da Costa",
-    "email": "",
+    "email": "njr.dacosta@gmail.com",
     "url": "https://github.com/nicdaCosta"
   },
   "main": "app/index.js",
