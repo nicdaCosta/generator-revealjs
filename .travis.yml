@@ -4,7 +4,9 @@ node_js:
 - '0.10'
 deploy:
   provider: npm
+  email: njr.dacosta@gmail.com
   api_key:
-    secure: OFy5AzfahHM4kIRtd1LDIBUqi84gYAwq4SdvpIYtanDZfdTdvYNFMrsdsxsqdprDYf+RYAV2oRejEU1zfwyEFrZQQgsI7trxUFWRvzw6PubL81COQjHReKUacOM41VHm3Mr9ZTSIEgxLn7VdovUg5U1Xw7VsDwSDOpp710avfiE=
+    secure: exnBovjNyLMXC+gLYBbLmKJ2smhY5mqDHxB9UlRA/4YlliDtn231mgW6Cu6BYRDQzsiYW3Eh5iWQR6+j/CbGvr2WzmMOESbYmi3ZF2vjSrlrYyniwUVCMe2+h+LsuVBt/te05i/R9cffSInPqTrO3pUMQpCiidfgB8Vl1ew9uRI=
   on:
-    - tags: true
+    tags: true
+    repo: nicdaCosta/generator-revealjs
